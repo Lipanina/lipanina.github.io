@@ -1,0 +1,77 @@
+@import url(about.css);
+@import url(default.css);
+@import url(features.css);
+@import url(feedback.css);
+@import url(footer.css);
+@import url(header.css);
+@import url(hero.css);
+@import url(magic.css);
+@import url(marquee.css);
+@import url(masters.css);
+@import url(menu.css);
+@import url(prices.css);
+@import url(reviews.css);
+@import url(services.css);
+@import url(title-services.css);
+@import url(works.css);
+@import url(servicesWorks.css);
+
+/* ИМПОРТИРУЮ ВСЕ СТИЛИ, ДЛЯ КАЖДЫХ БЛОКОВ */
+
+/* ОБЩИЕ ОСНОВНЫЕ СТИЛИ */
+
+.social,
+.link,
+.button,
+.hero__nav-link,
+.serviceButton {
+    transition: .3s;
+}
+
+.social:hover,
+.link:hover,
+.button:hover,
+.hero__nav-link:hover {
+    opacity: .5;
+}
+
+.serviceButton:hover {
+    transform: scale(1.1);
+}
+
+/* СТИЛИ ДЛЯ СКРОЛЛА */
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #397524 #DFE9EB;
+  }
+  
+  /* Chrome, Edge and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+    width: 10px;
+  }
+  *::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #DFE9EB;
+  }
+  
+  *::-webkit-scrollbar-track:hover {
+    background-color: #B8C0C2;
+  }
+  
+  *::-webkit-scrollbar-track:active {
+    background-color: #B8C0C2;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #7a8555;
+  }
+  
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: #7a8555;
+  }
+  
+  *::-webkit-scrollbar-thumb:active {
+    background-color: #7a8555;
+  }

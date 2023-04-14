@@ -1,0 +1,74 @@
+.magic {
+  display: flex;
+  position: relative;
+  padding: 4rem;
+}
+.magic .images {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.magic .images img {
+  box-sizing: border-box;
+  object-fit: contain;
+}
+.magic .images img:first-child {
+  margin-top: 4rem;
+}
+.magic .images img:last-child {
+  margin-top: 10rem;
+}
+.magic .lines {
+  z-index: -1;
+  position: absolute;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+.magic .lines .line:first-child {
+  left: 0px;
+  position: absolute;
+  top: -278px;
+}
+.magic .lines .line:last-child {
+  position: absolute;
+  left: 990px;
+  top: 430px;
+}
+.magic .shadows {
+  z-index: -1;
+  position: absolute;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+.magic .shadows .shadow {
+  position: absolute;
+  width: 376px;
+  height: 376px;
+  left: 67px;
+  top: 214px;
+  background: #8f9b67;
+  filter: blur(75px);
+}
+.magic .shadows .shadow:first-child {
+  left: -64px;
+  top: 0px;
+}
+.magic .shadows .shadow:nth-child(2) {
+  left: 767px;
+  top: 402px;
+}
+.magic .shadows .shadow:last-child {
+  left: 1400px;
+  top: 40px;
+}
+
+@media screen and (max-width: 1000px) {
+  .magic {
+    display: none;
+  }
+}

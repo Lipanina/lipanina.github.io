@@ -1,0 +1,49 @@
+.works_index {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 6rem;
+}
+.works_index__title {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  text-align: center;
+  color: #000000;
+}
+.works_index__carousel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 0 1rem;
+  user-select: none;
+}
+.works_index__carousel .content {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+  gap: 1rem;
+}
+.works_index__carousel .content .card {
+  display: flex;
+}
+.works_index__carousel .content .card img {
+  max-width: 100%;
+}
+.works_index__carousel .content .card:not(:nth-child(-n + 3)) {
+  display: none;
+}
+.works_index__carousel .right,
+.works_index__carousel .left {
+  flex: 0 0 auto;
+  display: flex;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  .works_index__carousel .content .card:not(:nth-child(-n + 1)) {
+    display: none;
+  }
+}

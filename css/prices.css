@@ -1,0 +1,92 @@
+.prices {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 4rem;
+  box-sizing: border-box;
+}
+.prices .title {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 43px;
+  color: #000000;
+  text-align: center;
+  margin: 30px 0 10px 0;
+  box-sizing: border-box;
+}
+.prices .grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  gap: 8rem 16rem;
+  max-width: 1400px;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+}
+.prices .list {
+  display: flex;
+  flex-direction: column;
+  max-width: 560px;
+  width: 100%;
+  gap: 1rem;
+  box-sizing: border-box;
+}
+.prices .list h4 {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  margin: 0;
+}
+.prices .list .item {
+  border-bottom: 1px solid #000;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  gap: 3rem;
+}
+.prices .list .item .name {
+  box-sizing: border-box;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.prices .list .item .price {
+  flex: 1 0 auto;
+  box-sizing: border-box;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  text-align: right;
+}
+.prices .list .item .price .rub {
+  margin-left: 0.5rem;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+@media screen and (max-width: 1000px) {
+  .prices .grid {
+    gap: 2rem;
+  }
+  .prices .list .item {
+    gap: 1rem;
+  }
+  .prices .list .item .name {
+    font-size: 18px;
+  }
+  .prices .list .item .price {
+    font-size: 20px;
+  }
+}

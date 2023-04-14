@@ -1,0 +1,66 @@
+.features {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 0;
+  margin-top: 8rem;
+}
+.features .block {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.features .block .text {
+  display: flex;
+  gap: 8px;
+}
+.features .block .text .title {
+  margin-top: 4rem;
+  margin-bottom: 0;
+  max-width: 540px;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  color: #000;
+}
+.features .block img.preview {
+  max-width: 100%;
+}
+.features .block.alt {
+  flex-direction: row;
+}
+.features .block.alt .text {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+@media screen and (max-width: 1000px) {
+  .features {
+    margin-top: 0;
+    padding: 0;
+  }
+  .features .block {
+    flex-direction: column-reverse;
+  }
+  .features .block .text {
+    align-items: center;
+  }
+  .features .block .text .title {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 20px;
+  }
+  .features .block.alt {
+    flex-direction: column-reverse;
+  }
+  .features .block.alt .text {
+    flex-direction: row;
+    text-align: left;
+  }
+  .features .block .number {
+    transform: scale(0.5);
+  }
+  .features .block .preview {
+    margin: auto;
+  }
+}

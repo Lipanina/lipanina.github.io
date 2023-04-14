@@ -1,0 +1,46 @@
+.masters {
+  margin-top: 2rem;
+  max-width: 1324px;
+  margin: auto;
+}
+.masters .title {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  text-align: left;
+  color: #000000;
+}
+.masters .list {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  padding: 2rem 0 4rem 0;
+  justify-content: center;
+  width: fit-content;
+}
+.masters .list .master {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.masters .list .master .name {
+  margin-top: 0.5rem;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #000000;
+}
+
+@media screen and (max-width: 1000px) {
+  .masters .title {
+    text-align: center;
+  }
+  .masters .list {
+    gap: 2rem;
+  }
+}

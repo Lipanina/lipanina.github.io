@@ -1,0 +1,38 @@
+footer {
+  background: #8f9b67;
+  color: #faedcd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4.5rem;
+  padding-bottom: 3.5rem;
+}
+footer .title {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.62em;
+  text-indent: 0.62em;
+  margin: 0;
+}
+footer .address {
+  margin-bottom: 0;
+  margin: 0 1rem;
+  text-align: center;
+}
+footer .socials {
+  display: flex;
+  gap: 2rem;
+}
+footer .socials .social {
+  display: flex;
+}
+
+@media screen and (max-width: 1000px) {
+  footer .title {
+    font-size: 48px;
+  }
+}
